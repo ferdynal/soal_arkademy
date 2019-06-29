@@ -3,6 +3,10 @@ const app = express();
 const db = require('./1.database');
 const bodyParser = require('body-parser');
 const port = 5000;
+const cors = require('cors');
+
+app.use(bodyParser.json());
+app.use(cors());
 
 // check connection to database
 db.connect((err) => {
