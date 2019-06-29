@@ -1,0 +1,7 @@
+// Query hasil tabel soal 7.A
+
+select nama.name as Name, hobi.name as Hobby, kategori.name as Category
+from nama
+inner join hobi on hobi.id = nama.id
+inner join kategori on kategori.id = nama.id
+order by nama.name;
